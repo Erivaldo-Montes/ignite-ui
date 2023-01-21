@@ -1,4 +1,4 @@
-import { Heading, HeadingProps } from '@ignite-ui/react/dist'
+import { Heading, HeadingProps } from '@erivaldo-ignite-ui/react/dist'
 import type { StoryObj, Meta } from '@storybook/react'
 
 export default {

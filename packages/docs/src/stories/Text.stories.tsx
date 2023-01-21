@@ -1,4 +1,4 @@
-import { Text, TextProps } from '@ignite-ui/react/dist/'
+import { Text, TextProps } from '@erivaldo-ignite-ui/react/dist/'
 import type { StoryObj, Meta } from '@storybook/react'
 
 export default {

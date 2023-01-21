@@ -1,4 +1,9 @@
-import { Box, Text, TextArea, TextAreaProps } from '@ignite-ui/react/dist/'
+import {
+  Box,
+  Text,
+  TextArea,
+  TextAreaProps,
+} from '@erivaldo-ignite-ui/react/dist/'
 import type { StoryObj, Meta } from '@storybook/react'
 
 export default {

@@ -1,4 +1,4 @@
-import { Box, BoxProps, Text } from '@ignite-ui/react/dist/index'
+import { Box, BoxProps, Text } from '@erivaldo-ignite-ui/react/dist/index'
 import type { StoryObj, Meta } from '@storybook/react'
 
 export default {
