@@ -8,6 +8,13 @@ export default {
     src: 'https://github.com/Erivaldo-Montes.png',
     alt: 'erivaldo montes',
   },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
 } as Meta<AvatarProps>
 
 // variações do components (obrigatórios)
