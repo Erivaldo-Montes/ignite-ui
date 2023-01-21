@@ -7,6 +7,32 @@ export default {
   component: Button,
   args: {
     children: 'send',
+    size: 'md',
+    variant: 'primary',
+    disabled: false,
+  },
+  // exibe os logs do components
+  argTypes: {
+    onClick: {
+      action: 'click',
+    },
+    variant: {
+      options: ['primary', 'secondary', 'tertiary'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    size: {
+      options: ['sm', 'md'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    disabled: {
+      control: {
+        type: 'boolean',
+      },
+    },
   },
 } as Meta<ButtonProps>
 
@@ -19,9 +45,9 @@ export const Secondary: StoryObj<ButtonProps> = {
     children: 'create new ',
   },
 }
-export const Terciary: StoryObj<ButtonProps> = {
+export const Tertiary: StoryObj<ButtonProps> = {
   args: {
-    variant: 'terciary',
+    variant: 'tertiary',
     children: 'cancel',
   },
 }
