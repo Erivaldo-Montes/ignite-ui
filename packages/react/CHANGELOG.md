@@ -1,7 +1,7 @@
-# @ignite-ui/react
+# @erivaldo-ignite-ui/react
 
-## 2.0.0
+## 4.0.0
 
 ### Major Changes
 
-- adddasdadd asdas adasd
+- asd asd
