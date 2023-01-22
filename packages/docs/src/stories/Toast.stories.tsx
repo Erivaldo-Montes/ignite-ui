@@ -1,4 +1,4 @@
-import { Toast, ToastProps } from '@erivaldo-ignite-ui/react/dist/'
+import { Toast, ToastProps } from '@erivaldo-ignite-ui/react/dist'
 import type { StoryObj, Meta } from '@storybook/react'
 
 export default {

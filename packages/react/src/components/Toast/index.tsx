@@ -21,7 +21,7 @@ export function Toast(props: ToastProps) {
   }, [props.isOpen])
 
   return (
-    <ToastRadix.Provider swipeDirection="left" duration={2000}>
+    <ToastRadix.Provider swipeDirection="left" duration={5000}>
       <ToastContainer open={isOpen} onOpenChange={setIsOpen}>
         <div>
           <ToastTitle>Agendamento realizado</ToastTitle>
