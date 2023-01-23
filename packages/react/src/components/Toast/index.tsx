@@ -8,13 +8,19 @@ import {
 import { X } from 'phosphor-react'
 import React, { ComponentProps, useEffect, useState } from 'react'
 import * as ToastRadix from '@radix-ui/react-toast'
+import { format } from 'date-fns'
+import { ptBR } from 'date-fns/locale'
 
 export interface ToastProps extends ComponentProps<typeof ToastContainer> {
   isOpen: boolean
+  date: Date
 }
 
 export function Toast(props: ToastProps) {
   const [isOpen, setIsOpen] = useState<boolean>(false)
+  const date = format(props.date, "EEEE',' d 'de' MMMM 'às' H'h'", {
+    locale: ptBR,
+  })
 
   useEffect(() => {
     setIsOpen(props.isOpen)
@@ -29,7 +35,7 @@ export function Toast(props: ToastProps) {
             <X weight="bold" size={20} />
           </ToastAction>
         </div>
-        <ToastDescription>Quarta-feira, 23 de outubro ás 16h</ToastDescription>
+        <ToastDescription>{date}</ToastDescription>
       </ToastContainer>
       <ToastViewport />
     </ToastRadix.Provider>

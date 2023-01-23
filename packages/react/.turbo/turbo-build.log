@@ -1,5 +1,5 @@
 
-> @ignite-ui/react@2.0.0 build
+> @erivaldo-ignite-ui/react@1.2.0 build
 > tsup src/index.tsx --format esm,cjs --dts --external react
 
 CLI Building entry: src/index.tsx
@@ -8,10 +8,27 @@ CLI tsup v6.5.0
 CLI Target: es6
 ESM Build start
 CJS Build start
-CJS dist/index.js 12.87 KB
-CJS ⚡️ Build success in 56ms
-ESM dist/index.mjs 11.06 KB
-ESM ⚡️ Build success in 56ms
+ESM dist/index.mjs 13.86 KB
+ESM ⚡️ Build success in 61ms
+CJS dist/index.js 15.95 KB
+CJS ⚡️ Build success in 61ms
 DTS Build start
-DTS ⚡️ Build success in 5512ms
-DTS dist/index.d.ts 43.28 KB
+src/components/Toast/index.tsx(25,15): error TS2345: Argument of type 'string' is not assignable to parameter of type 'number | Date | undefined'.
+
+Error: error occured in dts build
+    at Worker.<anonymous> (/home/erivaldo/development/rocketseat/ignite/react/aulas/design-system/node_modules/tsup/dist/index.js:2226:26)
+    at Worker.emit (node:events:513:28)
+    at MessagePort.<anonymous> (node:internal/worker:236:53)
+    at MessagePort.[nodejs.internal.kHybridDispatch] (node:internal/event_target:736:20)
+    at MessagePort.exports.emitMessage (node:internal/per_context/messageport:23:28)
+RollupError: Failed to compile. Check the logs above.
+    at error (/home/erivaldo/development/rocketseat/ignite/react/aulas/design-system/node_modules/rollup/dist/shared/rollup.js:210:30)
+    at Object.error (/home/erivaldo/development/rocketseat/ignite/react/aulas/design-system/node_modules/rollup/dist/shared/rollup.js:23975:20)
+    at Object.error (/home/erivaldo/development/rocketseat/ignite/react/aulas/design-system/node_modules/rollup/dist/shared/rollup.js:23220:42)
+    at Object.transform (/home/erivaldo/development/rocketseat/ignite/react/aulas/design-system/node_modules/tsup/dist/rollup.js:7287:20)
+    at /home/erivaldo/development/rocketseat/ignite/react/aulas/design-system/node_modules/rollup/dist/shared/rollup.js:24176:40
+DTS Build error
+npm ERR! Lifecycle script `build` failed with error: 
+npm ERR! Error: command failed 
+npm ERR!   in workspace: @erivaldo-ignite-ui/react@1.2.0 
+npm ERR!   at location: /home/erivaldo/development/rocketseat/ignite/react/aulas/design-system/packages/react 
