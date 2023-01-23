@@ -18,9 +18,6 @@ export interface ToastProps extends ComponentProps<typeof ToastContainer> {
 
 export function Toast(props: ToastProps) {
   const [isOpen, setIsOpen] = useState<boolean>(false)
-  const date = format(props.date, "EEEE',' d 'de' MMMM 'às' H'h'", {
-    locale: ptBR,
-  })
 
   useEffect(() => {
     setIsOpen(props.isOpen)
