@@ -5,6 +5,8 @@ export default {
   title: 'Data display/Tooltip',
   component: Tooltip,
   args: {
+    date: new Date(),
+    available: false,
     children: (
       <div
         style={{
@@ -22,9 +24,8 @@ export default {
         Hover
       </div>
     ),
-    date: new Date(),
-    available: false,
   },
+
   argTypes: {
     available: {
       control: {
